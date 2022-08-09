@@ -13,6 +13,7 @@ public class ChangePassword extends Account {
 		System.out.print(">>");
 		password = sc.nextInt();
 		REGISTER_PASSWORD = password;
+		System.out.println("[[저장 완료]]");
 		
 		return password;
 	}
