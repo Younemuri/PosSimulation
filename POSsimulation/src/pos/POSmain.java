@@ -21,11 +21,11 @@ public class POSmain {
 			long start = System.currentTimeMillis();
 			System.out.println("");
 			System.out.println(ac.getName() + "님 안녕하세요.");
+			System.out.println("");
+			System.out.println("-----------------------------------------------------------------------------------------------------");
+			System.out.println("1. 물품 등록 | 2. 물품 재고 확인 | 3. 물품 판매 | 4. 나의 예상 급료 확인 | 5. 비밀번호 변경 | 6. 종료");
 			
 			while(true) {
-				System.out.println("");
-				System.out.println("-----------------------------------------------------------------------------------------------------");
-				System.out.println("1. 물품 등록 | 2. 물품 재고 확인 | 3. 물품 판매 | 4. 나의 예상 급료 확인 | 5. 비밀번호 변경 | 6. 종료");
 				System.out.println("-----------------------------------------------------------------------------------------------------");
 				System.out.print("메뉴 선택>> ");
 				choice = sc.nextInt();
@@ -39,6 +39,7 @@ public class POSmain {
 				} else if(choice == 4) {
 					long end = System.currentTimeMillis();
 					int worktime = (int) ((end - start) / 1000.0);
+					System.out.println("");
 					System.out.println("일한 시간: " + worktime + "초");
 					pc.dowork(worktime);
 				} else if(choice == 5) {
