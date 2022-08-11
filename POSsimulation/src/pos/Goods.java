@@ -3,7 +3,7 @@ package pos;
 import java.util.Scanner;
 
 public class Goods extends DB {
-	public String goods_name; 
+	public String goods_name;
 	
 	Scanner sc = new Scanner(System.in);
 	
@@ -13,7 +13,11 @@ public class Goods extends DB {
 		System.out.print(">>");
 		this.goods_name = sc.nextLine();
 		
-		goods_list.add(goods_name);
+		try {
+			goods_list.add(goods_name);
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
 		System.out.println("");
 		System.out.println("[저장완료]");
 	}
@@ -21,9 +25,10 @@ public class Goods extends DB {
 	public void lookgoods() {
 		System.out.println("");
 		
-		for(String name: goods_list) {
-			System.out.println("물품 이름: " + name);
+			for(String name: goods_list) {
+				System.out.println(name);
 		}
+		System.out.println("");
 	}
 	
 	public void sellgoods() {
@@ -32,6 +37,12 @@ public class Goods extends DB {
 		System.out.print(">>");
 		this.goods_name = sc.nextLine();
 		
-	    goods_list.remove(this.goods_name);
+	    try {
+	    	goods_list.remove(this.goods_name);
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+	    System.out.println("");
+		System.out.println("[저장완료]");
 	}
 }

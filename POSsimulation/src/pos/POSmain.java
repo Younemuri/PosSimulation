@@ -13,6 +13,7 @@ public class POSmain {
 		ChangePassword cp = new ChangePassword();
 		Termination t = new Termination();
 		Goods g = new Goods();
+		DB db = new DB();
 		
 		ac.entername(ac.getName());
 		ac.enterpassword(ac.password);
@@ -23,7 +24,7 @@ public class POSmain {
 			System.out.println(ac.getName() + "님 안녕하세요.");
 			System.out.println("");
 			System.out.println("-----------------------------------------------------------------------------------------------------");
-			System.out.println("1. 물품 등록 | 2. 물품 재고 확인 | 3. 물품 판매 | 4. 나의 예상 급료 확인 | 5. 비밀번호 변경 | 6. 종료");
+			System.out.println("1. 물품 등록 | 2. 물품 재고 확인 | 3. 물품 제거 | 4. 나의 예상 급료 확인 | 5. 비밀번호 변경 | 6. 종료");
 			
 			while(true) {
 				System.out.println("-----------------------------------------------------------------------------------------------------");

@@ -1,17 +1,17 @@
 package pos;
 
+import java.util.LinkedList;
 import java.util.Arrays;
-import java.util.List;
 
 public class DB {
-	public List<String> goods_list = Arrays.asList( "사과", 	 // 1
-			    									"바나나",    // 2
-			    									"담배",      // 3
-			    									"칫솔",      // 4
-			    									"소주",      // 5
-			    									"맥주",      // 6
-			    									"유우",      // 7
-			    									"커피",      // 8
-			    									"핫바",      // 9
-													"떡복기" );  // 10
+	public LinkedList<String> goods_list = new LinkedList<>(Arrays.asList( "사과", 
+																		   "바나나",
+																		   "담배",
+																		   "칫솔",
+																		   "소주",
+																		   "맥주",
+																		   "유우",
+																		   "커피",
+																		   "핫바",
+																		   "떡복기") );
 }
