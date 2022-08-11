@@ -3,6 +3,7 @@ package pos;
 import java.util.Scanner;
 
 public class Account {
+	
 	public String REGISTER_NAME = "김재현";
 	public int REGISTER_PASSWORD = 20171442;
 	public String name;

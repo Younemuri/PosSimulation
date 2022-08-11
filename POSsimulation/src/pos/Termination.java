@@ -1,6 +1,7 @@
 package pos;
 
 public class Termination extends PayCheak {
+	
 	public int exit(int time) {
 		pay = time * 9800;
 		System.out.println("");
